@@ -1,0 +1,432 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.caja-grande{
+    width: 100%;
+    height: 115px;
+    border: 2px solid rgb(0, 26, 255) ;
+    margin: 0px auto;
+    display: flex;
+   padding: 20px;
+    justify-content: center;
+    align-items:center;
+    border-top: 3px solid rgb(0, 17, 255) ;
+   background: hsl(214, 83%, 53%); 
+}
+
+/*MODIFICAR CAJA1 */
+.caja-grande .caja1{
+    width: 280px;
+    height: 105px;
+  /* border: 3px solid blue; */
+   overflow: hidden;
+  /*  border-radius: 50%; */
+}
+.caja-grande .caja1 .img{
+    width: 100%;
+}
+
+/*MODIFICAR CAJA 2*/
+.caja-grande .caja2{
+    width: 60px;
+    height: 60px;
+    border: 1px solid ;
+    align-items: center; 
+    justify-content: center; 
+  /*  margin-left: 15px;  */
+  /* background-color: hsl(0, 83%, 53%); */
+    border-radius: 50%;
+}
+.caja-grande .caja2 img{
+    width: 50%;
+    margin: 10px 15px auto;
+}
+/* BARRRA MENU */
+
+/*MODIFICAR MENU*/
+.caja-grande .caja-menu{
+    width: 60%;
+    height: 63Px;
+}
+
+/*- TAMAÑO DE LA BARRA DE MENU */
+.navegacion{
+    width: 750px;
+    height: 40%; 
+    background-color: hsl(0, 30%, 96%);
+    text-align: center;
+    margin: 0px auto;
+}
+
+/* COLOR LINEA MENU */
+.navegacion ul{
+    list-style: none;
+    background-color: hsl(214, 83%, 53%);
+}
+
+.MENU>li{
+    position:relative;
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+}
+
+/* COLOR TEXTO MENU */
+.MENU>li>a{
+    display: inline-block;
+    padding: 20px 20px;
+    color: hsl(273, 29%, 94%);
+    font-family:"Poppins", sans-serif;
+    text-decoration: none;
+}
+
+/*COLOR  FONDO MEMU */
+.MENU>li>a:hover{
+   /* width: 100%;  */
+    height: 15px;
+    background-color: hsl(280, 30%, 96%);
+    color: hsl(60, 4%, 5%);
+}
+
+/* SUB MENU */
+.SUB-MENU{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.SUB-MENU li a{
+    display: block;
+    padding: 7px;
+    color: #f7f6f9;
+    text-decoration: none;
+}
+.MENU li:hover .SUB-MENU{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+}
+.SUB-MENU>li>a:hover{
+    padding: 8px 8px;
+    color:hsl(60, 3%, 7%);
+    transition: 0.7s;
+    background-color: white;
+}
+
+/*ESTILO */
+.slide{
+    /* border: 3px solid;*/
+     margin: 0px auto;
+      width: 100%;
+      height: 450px;
+      border: 3px auto;
+      overflow: hidden; 
+
+  }
+  .slide ul{
+      padding: 0px;
+      display: flex;
+      width: 400%;
+      height: 700px;
+      animation: slide 20s infinite;
+  }
+  
+  @keyframes slide{
+      0%{margin-left: 0%;}
+      20%{margin-left: 0%;}
+  
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+  
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+  
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+      }
+  .slide li{
+      width: 100%;
+      list-style: none;
+  }
+  .slide  li img{
+      width: 100%;
+      background: #FDC830;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .ola{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+
+/*CAJA DE IMAGENES DE LINEAS ESTRATEGICAS*/
+.titulo1{
+    width: 100%;
+    height: 70px;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo1 .h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-family:"Poppins", sans-serif;
+}
+
+/* CONTENIDO */
+.caja-inicio {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        font-family:"Poppins", sans-serif;
+        color: red;
+}
+
+.caja-inicio .valor1{
+    width: 200px;
+    height: 250%;
+    margin: 50px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.caja-inicio .valor1 img{
+    width: 100%;
+    border-radius: 80%;
+}
+.valor1 p{
+    align-items: center;
+    justify-content: center;
+}
+.caja-inicio .valor2{
+    width: 200px;
+    height: 150%;
+    margin: 20px; 
+    overflow: hidden; 
+    flex-direction: column;
+}
+.caja-inicio .valor2 img{
+    width: 100%;
+    border-radius: 80%;
+}
+
+.caja-inicio .valor3{
+    width: 200px;
+    height: 150%;
+    margin: 20px;
+    overflow: hidden;
+    flex-direction: column;
+  
+}
+.caja-inicio .valor3 img{
+    width: 100%;
+    border-radius: 80%;
+}
+.caja-inicio .valor4{
+    width: 200px;
+    height: 150%;
+    margin: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.caja-inicio .valor4 img{
+    width: 100%;
+    border-radius: 50%;
+}
+.caja-inicio .p3{
+    color: red;
+}
+
+.contenido{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 10px;
+}
+.contenido .colegio{
+    width: 450px;
+    height: 30%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(303, 96%, 35%, 0.582), #159957), url(/IMAGENES/principal.jpg);  
+    background: linear-gradient(to right, hsla(210, 76%, 34%, 0.048), hsla(323, 96%, 28%, 0.603)), url(/IMAGENES/principal.jpg); 
+} 
+.contenido .colegio img{
+    width: 100%;
+}
+.contenido .aula-virtual{
+    width: 500px;
+    height: 30%;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to bottom, hsla(0, 88%, 48%, 0.973), hsl(0, 84%, 46%));
+  /*  background: -webkit-gradient(linear, left top, right top, from(#184d47), to(#184d47));
+    background: linear-gradient(to right, #184d47, #184d47); */
+    overflow: hidden;
+    color: white;
+    border-radius: 20%x;
+}
+
+.contenido .aula-virtual p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(0, 33%, 97%);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    padding: 15px;
+    
+}
+.contenido .aula-virtual-img{
+    width: 250px;
+    margin: 25px auto;
+   /* overflow: hidden; */
+}
+
+.aula-virtual-img img{
+    width: 100%;
+}
+
+
+.novedades{
+    width: 80%;
+    height: 50px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: center; 
+    align-content: center; 
+   /* background-color: hsla(0, 3%, 43%, 0.226);  */
+    color: red;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    text-align: center;
+}
+.noticias .h2{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.noticias{
+    width: 80%;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 110px;
+    display: flex;
+   /* border: 2px solid;  */
+    justify-content: center;
+    background-color: rgba(144, 185, 190, 0.37);
+    text-align: justify;
+}
+.noticias .noticia1{
+    width: 45%;
+    height: 250px;
+   /*border: 2px solid; */
+   align-items: center;
+   position: relative;
+    margin: 20px 10px auto; 
+    align-items: center;
+    background: linear-gradient(to bottom, hsla(0, 88%, 48%, 0.973), hsl(0, 84%, 46%));   
+}
+
+.noticias .noticia1 p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: hsl(0, 33%, 97%);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: justify;
+    padding: 15px;
+    
+}
+.noticias .noticia2{
+    width: 45%;
+    height: 250px;
+  /*  border: 2px solid; */
+    margin: 20px 10px auto;
+    overflow: hidden;
+}
+.noticias .noticia2 img{
+    width: 100%;
+}
+.pie-pagina{
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    background-color: hsla(180, 4%, 5%, 0.986);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.pie-pagina .piepag1{
+    width: 30%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+   padding-top: 20px; 
+   padding-left: 10px;
+   padding-right: 20px;
+  /* border: 2px solid;  */ 
+    overflow: hidden;
+}
+.pie-pagina .piepag1 img{
+    width: 60%;
+}
+.pie-pagina .piepag2{
+    width: 30%;
+    height: 150px; 
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-left: 10px;
+
+   /*border: 2px solid; */
+}
+.pie-pagina .piepag3{
+    width: 35%;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 40px;
+   /*border: 2px solid; */
+}
+
+.pie-info {
+    width: 100%;
+    height: 70px;
+    border-top: 20px;
+    padding-top: 15px;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: hsla(180, 4%, 5%, 0.986);
+    color: white;
+}

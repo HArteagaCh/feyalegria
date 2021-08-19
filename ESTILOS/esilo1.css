@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ /*  background-color: rgb(196, 19, 19));  */
+}
+
+
+.header {
+    /*padding: 20;*/
+    margin-top: 0; 
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  /*  top: 0;*/
+   /* background: transparent;*/
+}
+
+.navegacion menu>img {
+   max-width: 200;
+   min-width: 70%;
+    margin: 0px auto;
+    text-align: left;
+    display: block;
+   /* float: left;    */
+}
+
+
+
+/* BARRA DE MENU */
+
+.navegacion{
+    width: 1300px;
+    background-color: hsl(0, 30%, 96%);
+    text-align: center;
+    margin: 10px auto;
+}
+
+.navegacion ul{
+    list-style: none;
+    background-color: hsl(0, 83%, 53%);
+}
+.MENU>li{
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.MENU>li>a{
+    display: inline-block;
+    padding: 20px 50px;
+    color: hsl(0, 31%, 94%);
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.MENU>li>a:hover{
+    background-color: hsl(60, 30%, 96%);
+    color: hsl(60, 4%, 5%);
+}
+
+/* SUB MENU */
+.SUB-MENU{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.SUB-MENU li a{
+    display: block;
+    padding: 7px;
+    color: #f7f6f9;
+    text-decoration: none;
+}
+.MENU li:hover .SUB-MENU{
+    display: block;
+    visibility: visible;
+    opacity: 1;overflow: hidden;
+}
+.SUB-MENU>li>a:hover{
+    color:hsl(59, 96%, 44%);
+    transition: 0.5s;
+}
+
+
+.slide{
+  /* border: 3px solid;*/
+   margin: 5px auto;
+    width: 70%;
+    height: 450px;
+    overflow: hidden; 
+}
+.slide ul{
+    padding: 0px;
+    display: flex;
+    width: 400%;
+    height: 700px;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+    }
+.slide li{
+    width: 100%;
+    list-style: none;
+}
+.slide  li img{
+    width: 100%;
+}
+
+/* ESTILOS DEL TITULO */
+.TITULO{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.TITULO h1{
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.TITULO h3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+.TITULO img{
+    margin-top: 40px;
+}
+
+/*PAGINA INICIO */
